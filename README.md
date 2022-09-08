@@ -22,41 +22,41 @@ Made some fixes to run from the box.
 
 ## Summary patch
 
-## In files:
+### In files:
 ``` txt
-	.\GOAD\ansible\roles\domain_controller\tasks\main.yml
-	.\GOAD\ansible\roles\child_domain\tasks\main.yml
+.\GOAD\ansible\roles\domain_controller\tasks\main.yml
+.\GOAD\ansible\roles\child_domain\tasks\main.yml
 ```
 	
-### This code:
+#### This code:
 ``` txt
-	- name: "Install XactiveDirectory"
-	  win_psmodule:
-	    name: ActiveDirectoryDSC
-	    state: present
+- name: "Install XactiveDirectory"
+  win_psmodule:
+    name: ActiveDirectoryDSC
+    state: present
 ```
 
-### To code:
+#### To code:
 ``` txt
-	#- name: "Install XactiveDirectory"
-	#  win_psmodule:
-	#    name: ActiveDirectoryDSC
-	#    state: present
+#- name: "Install XactiveDirectory"
+#  win_psmodule:
+#    name: ActiveDirectoryDSC
+#    state: present
 ```
 
-## In files:
+### In files:
 ``` txt
-	.\GOAD\ansible\roles\ad\tasks\ou.yml
+.\GOAD\ansible\roles\ad\tasks\ou.yml
 ```
 
-### This code:
+#### This code:
 ``` txt
-	resource_name: ADOrganizationalUnit
+resource_name: ADOrganizationalUnit
 ```
 
-### To code:
+#### To code:
 ``` txt
-	resource_name: xADOrganizationalUnit
+resource_name: xADOrganizationalUnit
 ```
 
 ## Description
