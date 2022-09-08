@@ -13,8 +13,8 @@ From the box, it does not deploy under Windows.
 Made some fixes to run from the box.
 
 1. Disable HyperV (https://www.wintips.org/fix-virtualbox-running-very-slow-in-windows-10-11/)
-2. After deploy VM from vagrant:
-    - copy folder `.\GOAD2INWIN\vagrant` to all guest machine;
+2. After deploy VM from vagrant do this steps for all machines:
+    - copy folder `.\GOAD2INWIN\vagrant` to guest machine;
     - run Powershell as Administartor;
     - change current folder to copied folder `.\GOAD2INWIN\vagrant`;
     - run scripts `!prepare_2016.ps1` - for Windows Server 2016 and `!prepare_2019.ps1` - for Windows Server 2019.
