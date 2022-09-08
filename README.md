@@ -2,18 +2,23 @@
 
 ![goad.png](./docs/img/GOAD.png)
 
-# !!! NOTES !!!
+# !!! NOTES PATCH !!!
 
 This is a forked project (https://github.com/Orange-Cyberdefense/GOAD).
 
 
-Out of the box, it does not deploy under Windows.
+From the box, it does not deploy under Windows.
 
 
-Made some fixes to allow normal run.
+Made some fixes to run from the box.
 
-1.
-
+1. Disable HyperV (https://www.wintips.org/fix-virtualbox-running-very-slow-in-windows-10-11/)
+2. After deploy VM from vagrant:
+    - copy folder `.\GOAD2INWIN\vagrant` to all guest machine;
+    - run Powershell as Administartor;
+    - change current folder to copied folder `.\GOAD2INWIN\vagrant`;
+    - run scripts `!prepare_2016.ps1` - for Windows Server 2016 and `!prepare_2019.ps1` - for Windows Server 2019.
+3. Create VM Linux machine with same networking as VM Windows AD machines. And run Installation chapter from this VM Linux machine.
 
 ## Description
 GOAD is a pentest active directory LAB project.
