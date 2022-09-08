@@ -2,6 +2,19 @@
 
 ![goad.png](./docs/img/GOAD.png)
 
+# !!! NOTES !!!
+
+This is a forked project (https://github.com/Orange-Cyberdefense/GOAD).
+
+
+Out of the box, it does not deploy under Windows.
+
+
+Made some fixes to allow normal run.
+
+1.
+
+
 ## Description
 GOAD is a pentest active directory LAB project.
 The purpose of this lab is to give pentesters a vulnerable Active directory environement ready to use to practice usual attack techniques.
