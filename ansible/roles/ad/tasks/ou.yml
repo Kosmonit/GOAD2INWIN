@@ -1,6 +1,6 @@
 - name: "Create OU"
   win_dsc:
-    resource_name: ADOrganizationalUnit
+    resource_name: xADOrganizationalUnit
     name: "{{ item.key }}"
     path:  "{{ item.value.path }}"
   with_dict: "{{ad_ou}}"
