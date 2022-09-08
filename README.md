@@ -20,6 +20,45 @@ Made some fixes to run from the box.
     - run scripts `!prepare_2016.ps1` - for Windows Server 2016 and `!prepare_2019.ps1` - for Windows Server 2019.
 3. Create VM Linux machine with same networking as VM Windows AD machines. And run Installation chapter from this VM Linux machine.
 
+## Summary patch
+
+## In files:
+``` txt
+	.\GOAD\ansible\roles\domain_controller\tasks\main.yml
+	.\GOAD\ansible\roles\child_domain\tasks\main.yml
+```
+	
+### This code:
+``` txt
+	- name: "Install XactiveDirectory"
+	  win_psmodule:
+	    name: ActiveDirectoryDSC
+	    state: present
+```
+
+### To code:
+``` txt
+	#- name: "Install XactiveDirectory"
+	#  win_psmodule:
+	#    name: ActiveDirectoryDSC
+	#    state: present
+```
+
+## In files:
+``` txt
+	.\GOAD\ansible\roles\ad\tasks\ou.yml
+```
+
+### This code:
+``` txt
+	resource_name: ADOrganizationalUnit
+```
+
+### To code:
+``` txt
+	resource_name: xADOrganizationalUnit
+```
+
 ## Description
 GOAD is a pentest active directory LAB project.
 The purpose of this lab is to give pentesters a vulnerable Active directory environement ready to use to practice usual attack techniques.
