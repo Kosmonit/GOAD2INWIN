@@ -116,7 +116,7 @@
 - name: enable interface Ethernet after domain joined
   win_shell: netsh interface set interface "Ethernet" enable
 
-- name: "Install XactiveDirectory"
-  win_psmodule:
-    name: ActiveDirectoryDSC
-    state: present
+#- name: "Install XactiveDirectory"
+#  win_psmodule:
+#    name: ActiveDirectoryDSC
+#    state: present
