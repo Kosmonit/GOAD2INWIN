@@ -43,7 +43,7 @@
 #- name: install nuget
 #  win_shell: install-packageprovider -name nuget -force
 
-- name: "Install XactiveDirectory"
-  win_psmodule:
-    name: ActiveDirectoryDSC
-    state: present
+#- name: "Install XactiveDirectory"
+#  win_psmodule:
+#    name: ActiveDirectoryDSC
+#    state: present
