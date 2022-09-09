@@ -10,7 +10,7 @@ This is a forked project (https://github.com/Orange-Cyberdefense/GOAD).
 From the box, it does not deploy under Windows.
 
 
-Made some fixes to run from the box.
+Made some fixes and do steps to run from the box:
 
 1. Disable HyperV (https://www.wintips.org/fix-virtualbox-running-very-slow-in-windows-10-11/)
 2. After deploy VM from vagrant do this steps for all machines:
