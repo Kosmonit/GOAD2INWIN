@@ -18,7 +18,7 @@ Made some fixes and do steps to run from the box:
     - run Powershell as Administartor;
     - change current folder to copied folder `.\GOAD2INWIN\vagrant`;
     - run scripts `!prepare_2016.ps1` - for Windows Server 2016 and `!prepare_2019.ps1` - for Windows Server 2019.
-3. Create VM Linux machine with same networking as VM Windows AD machines. And run Installation chapter from this VM Linux machine.
+3. Create VM Linux machine (Ubuntu) with same networking as VM Windows AD machines (192.168.56.0/24). **And run Installation chapter from this VM Linux (Ubuntu) machine.** AD machines should have been accessible from Linux (Ubuntu).
 
 ## Summary patch
 
