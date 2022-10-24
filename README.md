@@ -58,6 +58,12 @@ resource_name: ADOrganizationalUnit
 ``` txt
 resource_name: xADOrganizationalUnit
 ```
+# Writeup
+https://mayfly277.github.io/posts/GOADv2-pwning_part1/
+
+...
+
+# Original project
 
 ## Description
 GOAD is a pentest active directory LAB project.
